@@ -1,0 +1,234 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Slab&display=swap');
+
+/*principal*/
+*{
+    margin: 0;  
+}
+body{
+    background-color: rgb(230, 230, 230);
+}
+header{
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    background-color: #ece2d0;
+    position: sticky;
+    top: 0;
+    border-bottom-style: solid;
+    border-color: #ab1616;
+    border-width: 4px;
+}
+#log{
+    display: flex;
+    width: 40vw;
+    height: 10vh;
+}
+#logo{
+    padding-left: 6vw;
+    width: 13vw;
+    height: 18vh;
+}
+nav{
+    display: flex;
+    width: 60vw; /*logo : 40vw*/
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+}
+.buton{
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    justify-content: center;
+    color: rgb(105, 105, 105);
+    text-decoration: none;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-size: 35px;
+    position: relative;
+}
+.buton:after{
+    content: "";
+    position: absolute;
+    background-color: #ab1616;
+    height: 4px;
+    width: 0%;
+    bottom: 5px;
+    border-radius: 2px;
+}
+.buton:hover{
+    color: black;
+}
+.buton:hover:after{
+    width: 100%;
+    transition: 0.5s;
+}
+main{
+    font-family: 'Roboto Slab', serif;
+    background-color: #bca784;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px; 
+}
+#titre{
+    height: 20vh;
+    padding-right: 25vw;
+}
+#titreB{
+    height: 10vh;
+    padding: 0 25vw 2vh 0;
+}
+/* Principal */
+
+
+/* corps */
+article{
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: none;
+    justify-content: center;
+    margin: 10vh 20vw 0 20vw;
+    font-size: 30px;
+}
+span{
+    color: #ab1616;
+}
+/* corps */
+
+/* page2 */
+article section{
+    display: flex;
+    width: 70vw;
+    height: 41vh;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #bca784;
+    margin-top: 5vh;
+    border-radius: 10px;
+}
+.nom{
+    color: #ab1616;
+    font-weight: bold;
+    font-size: 35px;
+}
+.contentA{
+    width: 50%;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+.drake{
+    width: 15vw;
+    height: 30vh;
+    margin: 5vh 4vw 0 4vw;
+    border-radius: 10px;
+}
+section:hover{
+    border: 5px solid #771b1b;
+    transition: 0.2s;
+}
+/* page2 */
+
+/* page3 */
+form{
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: none;
+    justify-content: center;
+    margin: 0 20vw 0 20vw;
+}
+.indic{
+    padding-top: 7vh;
+    padding-bottom: 1vh;
+    margin-right: 20vw;
+}
+.rens{
+    font-size: 25px;
+    padding: 2px 5px;
+    width: 40vw;
+    border-radius: 10px;
+}
+.env{
+    margin-top: 5vh;
+    padding: 1vh 1vw 1vh 1vw;
+    border: 3px solid #771b1b;
+    color: #771b1b;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.env:hover{
+    background-color: #771b1b;
+    color: white;
+    transition: all 0.5s;
+}
+/* page3 */
+
+/* page4 */
+#ret{
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+}
+
+/*responsive*/
+@media (max-width:630px)
+{
+    header{
+        flex-wrap: wrap;
+    }
+    nav{
+        justify-content: space-between;
+    }
+    #log{
+        width: 100%;
+    }
+    #logo{
+        padding-left: 6vw;
+        width: 40vw;
+        height: 13vh;
+    }
+    .buton{
+        font-size: 25px;
+    }
+    main{
+        font-size: 40px;
+    }
+    #titre{
+        height: 15vh;
+    }
+    #titreB{
+        height: 10vh;
+        font-size: 30px;
+    }
+    article section{
+        width: 90vw;
+        height: 55vh;
+        font-size: 17px;
+    }
+    .contentA{
+        width: 55%;
+    }
+    .nom{
+        font-size: 25px;
+    }
+    .drake{
+        width: 30vw;
+        height: 15vh;
+        margin: 2vh 1vw 0 1vw;
+    }
+    .rens{
+        width: 80vw;
+        font-size: 20px;
+    }
+    article{
+        margin: 5vh 3vw 5vh 3vw;
+        font-size: 20px;
+    }
+    form{
+        margin: 5vh 5vw 0 5vw;
+        font-size: 20px;
+    }
+}
